@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lesson-19-2-23-2"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry Zadorozhnyy <zadorozhnyy_d_m@mail.ru>"]
+readme = "README.md"
+packages = [{include = "lesson_19"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
