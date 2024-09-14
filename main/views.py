@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from main.models import Student
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
 
@@ -34,4 +34,9 @@ class StudentCreateView(CreateView):
 class StudentUpdateView(UpdateView):
     model = Student
     fields = ('first_name', 'last_name', 'avatar',)
+    success_url = reverse_lazy('main:index')
+
+
+class StudentDeleteView(DeleteView):
+    model = Student
     success_url = reverse_lazy('main:index')
