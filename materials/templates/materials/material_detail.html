@@ -4,11 +4,14 @@
 <div class="col-md-4">
     <div class="card mb-4 box-shadow">
         <div class="card" style="width: 24rem;">
-            <h3 class="card-header">
-                Материал "{{ object.title }}"
-            </h3>
+            <h4 class="card-header">
+                Материал "{{ object.title }}" ({{ object.slug }})
+            </h4>
             <div class="card-body">
                 {{ object.body }}
+            </div>
+            <div class="card-footer">
+                Просмотры {{ object.views_count }}
             </div>
         </div>
     </div>
