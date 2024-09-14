@@ -20,6 +20,11 @@
                     <a href="{% url 'main:update_student' object.pk %}" class="btn btn-sm btn-outline-secondary">Edit</a>
                     <a href="{% url 'main:delete_student' object.pk %}" class="btn btn-sm btn-outline-danger">Delite</a>
                 </div>
+                {% if object.is_active %}
+                    <a href="{% url 'main:toggle_activity' object.pk %}" class="btn btn-warning">Деактивировать</a>
+                {% else %}
+                    <a href="{% url 'main:toggle_activity' object.pk %}" class="btn btn-success">Активировать</a>
+                {% endif %}
 
             </div>
         </div>
