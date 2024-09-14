@@ -7,6 +7,9 @@
             <h3 class="card-header">
                 Информация студента
             </h3>
+            <div class="col-6">
+                <img src="/media/{{ object.avatar }}" />
+            </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Имя: {{ object.first_name }}</li>
                 <li class="list-group-item">Фамилия: {{ object.last_name }}</li>

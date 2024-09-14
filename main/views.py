@@ -7,12 +7,10 @@ from django.urls import reverse_lazy
 
 class StudentListViews(ListView):
     model = Student
-    template_name = 'main/index.html'
 
 
-class StudentDetailVIew(DetailView):
+class StudentDetailView(DetailView):
     model = Student
-    template_name = 'main/student_detail.html'
 
 
 def contact(request):
